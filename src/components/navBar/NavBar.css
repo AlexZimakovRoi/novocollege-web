@@ -1,0 +1,59 @@
+nav {
+    top: 0;
+    height: 100vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar-logo-div {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1vw;
+}
+
+
+.navbar-logo-svg {
+    display: flex;
+    width: 2.3vw;
+    height: 2.3vw;
+}
+
+
+.navba-logo-p {
+    display: flex;
+    font-weight: 200;
+    font-size: 1.2vw;
+}
+
+
+.navbar-buttons-div {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+    padding-left: 4vw;
+}
+
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.active-sel {
+    height: 0.3vh;
+    background-color: white;
+    width: 0;
+    transition: 0.2s;
+}
+
+.active .active-sel {
+    width: 2vw;
+}

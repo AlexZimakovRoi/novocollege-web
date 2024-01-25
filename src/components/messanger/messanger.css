@@ -1,0 +1,158 @@
+.messanger {
+    width: 100%;
+    height: 90vh;
+
+    display: flex;
+}
+
+.messanger-list {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+
+    padding: 2vw;
+
+    background: #383A47;
+}
+
+.messages-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.messanges-number {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.messages-h1 {
+    font-size: 1.4vw;
+}
+
+.messanges-number-span {
+    width: 1.7vw;
+    height: 1.3vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.7vw;
+    background: linear-gradient(123deg, #B56EFD -0.82%, #B56EFD -0.81%, #9613FD 100%);
+
+    font-size: 0.8vw;
+}
+
+.messanges-button-add {
+    width: 2vw;
+    height: 2vw;
+
+    background: linear-gradient(#AC70F9, #7812F9);
+    border-radius: 0.7vw;
+}
+
+.messanges-button-add {
+    font-size: 1.6vw;
+}
+
+.message-select-filter {
+    background: none;
+    border: none;
+}
+
+.message-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3vh;
+}
+
+.message-box {
+    width: 100%;
+    height: 17vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 1.5vw;
+
+    overflow: hidden;
+
+    transition: 0.4s;
+}
+
+.message-box:focus {
+    background: linear-gradient(98deg, #525466 0%, #393B47 100%);
+    box-shadow: 0px 4px 32px 0px rgba(35, 36, 41, 0.50);
+}
+
+.message-title {
+    width: 80%;
+    height: 70%;
+
+    display: flex;
+    gap: 1vw;
+}
+
+.message-image {
+    width: 3vw;
+    height: 3vw;
+
+    border-radius: 1vw;
+    background: rgba(255, 255, 255, 0.801);
+}
+
+.message-main {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    padding: 1vh 0 1vh 0;
+}
+
+.message-sender-p {
+    display: flex;
+    align-items: flex-start;
+
+    font-size: 0.7vw;
+    color: rgba(255, 255, 255, 0.37);
+}
+
+.message-sender-h1 {
+    font-size: 0.9vw;
+}
+
+.message-category-p {
+    display: flex;
+    align-items: flex-start;
+
+    font-size: 0.7vw;
+    color: rgba(255, 255, 255, 0.37);
+}
+
+.message-time-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 0;
+    margin-top: 1vh;
+    width: 3.8vw;
+    height: 1.2vw;
+    background: #40424F;
+    border-radius: 1vw;
+}
+
+.message-time {
+    font-size: 0.75vw;
+    color: rgba(255, 255, 255, 0.562);
+}
