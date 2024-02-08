@@ -14,15 +14,15 @@ import Credits from './components/dashBoard/credits/credits';
 import Docs from './components/dashBoard/docs/docs';
 import CourseList from './components/dashBoard/courseList/courseList';
 import UserInfo from './components/dashBoard/userInfo/userInfo';
-import Shedule from './components/shedule/shedule';
+import Shedule from './components/schedule/shedule';
 
 import Teachers from './components/teachers/teachers';
 import './components/teachers/teachers'
 import AllTeachers from './components/teachers/allteachers/allteachers';
 import './components/teachers/allteachers/allteachers.css'
 import YourTeachers from './components/teachers/yourteachers/yourteachers';
-import YourShedule from './components/shedule/yourShedule';
-import EventsShedule from './components/shedule/eventsShedule';
+import YourShedule from './components/schedule/yourShedule';
+import EventsShedule from './components/schedule/eventsShedule';
 import Marks from './components/marks/marks';
 import CousreMarks from './components/marks/cousreMarks';
 import MessangerBox from './components/messanger/messangerBox';
