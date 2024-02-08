@@ -1,0 +1,46 @@
+.all-teachers-main {
+    width: 75%;
+    height: 100%;
+
+    padding: 1.5vw 1vw;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+
+    background-color: #383A47;
+}
+.all-teachers-heading {
+    font-size: 1.3vw;
+}
+.button-write-to {
+    padding: 0.5vw 2vw;
+    border-radius: 0.5vw;
+    background: linear-gradient(96deg, #AC70F9 -0.13%, #7812F9 99.87%);
+}
+.teachers-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info-teachers-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5vh;
+}
+.info-teachers-p p {
+    font-size: 0.9vw;
+}
+.ava-teacher {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 1vw;
+    background: rgba(255, 255, 255, 0.801);
+}
+.info-teachers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}

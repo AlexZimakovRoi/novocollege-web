@@ -1,0 +1,140 @@
+.dashBoard {
+    width: 100%;
+    height: 90vh;
+
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+}
+
+.dashBoard-user-div {
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3vw;
+}
+
+.dashBoard-user-info-div {
+    width: 100%;
+    height: 60%;
+
+    background: #383A47;
+}
+
+.dashBoard-user-ava {
+    width: 100%;
+    height: 75%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashBoard-user-img {
+    width: 60%;
+    border-radius: 4vw;
+    padding: 0.5vw;
+    outline: 2.5px solid #9E00FF;
+    user-select: none;
+}
+
+.reform {
+    cursor: pointer;
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
+.dashBoard-user-name-stat-div {
+    width: 100%;
+    height: 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 1vw;
+}
+
+.dashBoard-user-name-div {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7vw;
+}
+
+.dashBoard-user-name {
+    font-weight: 200;
+    font-size: 1.2vw;
+    letter-spacing: 0.02Svw;
+}
+
+.dashBoard-user-stat-div {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0vw 2vw 0vw 2vw;
+}
+
+.dashBoard-user-stat-div p {
+    cursor: default;
+    font-size: 1.1vw;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+.dashBoard-user-nav-div {
+    width: 100%;
+    height: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 1.5vw;
+
+    background: #383A47;
+}
+
+.dashBoard-user-nav-button {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.4vw;
+}
+
+.dashBoard-user-nav-button p {
+    font-size: 0.9vw;
+
+    cursor: pointer;
+}
+
+.active-select {
+    height: 0.2vh;
+    background-color: white;
+    width: 0;
+    transition: 0.2s;
+}
+
+.dashBoard-user-nav-button:focus .active-select {
+    width: 1.7vw;
+}
+
+.active-sel {
+    height: 0.3vh;
+    background-color: white;
+    width: 0;
+    transition: 0.2s;
+}
+
+.active .active-sel {
+    width: 2vw;
+}

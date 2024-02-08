@@ -1,0 +1,30 @@
+.course-main {
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+}
+
+.course-container {
+    padding: 1vw 2vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-course {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.action-course {
+    display: flex;
+    gap: 2vw;
+}
+
+.action-button {
+    padding: 0.5vw 2vw;
+    border-radius: 0.5vw;
+    background: linear-gradient(96deg, #AC70F9 -0.13%, #7812F9 99.87%);
+}

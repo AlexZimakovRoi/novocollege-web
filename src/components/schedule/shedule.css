@@ -1,0 +1,72 @@
+.shedule-page {
+    overflow-y: auto;
+}
+
+.shedule-page::-webkit-scrollbar {
+    width: 0;
+}
+
+.shedule-day-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0.5vw 1vw;
+    gap: 1vh;
+}
+
+.shedule-day {
+    font-size: 1.5vw;
+}
+
+.shedule-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shedule-card {
+    width: 15%;
+    height: 15vh;
+    border-radius: 0.5vw;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 0.4vw;
+}
+
+.shedule-time {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shedule-time p {
+    font-size: 0.8vw;
+}
+
+.shedule-name-lesson {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0.7vw;
+
+    text-align: center;
+}
+
+.shedule-name-teacher {
+    font-size: 0.8vw;
+    width: 100%;
+    text-align: end;
+}
+
+.day-active {
+    color: pink;
+}

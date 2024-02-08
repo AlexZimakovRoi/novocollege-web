@@ -2,11 +2,12 @@
     width: 100%;
     height: 90vh;
 
+    gap: 0.3vw;
     display: flex;
 }
 
 .messanger-list {
-    width: 40%;
+    width: calc(40% - 0.3vw);
     height: 100%;
 
     display: flex;
@@ -16,6 +17,14 @@
     padding: 2vw;
 
     background: #383A47;
+
+    overflow-y: auto;
+
+
+}
+
+.messanger-list::-webkit-scrollbar {
+    width: 0;
 }
 
 .messages-info {
@@ -86,7 +95,7 @@
     transition: 0.4s;
 }
 
-.message-box:focus {
+section .active {
     background: linear-gradient(98deg, #525466 0%, #393B47 100%);
     box-shadow: 0px 4px 32px 0px rgba(35, 36, 41, 0.50);
 }
@@ -97,6 +106,7 @@
 
     display: flex;
     gap: 1vw;
+    /* justify-content: space-between; */
 }
 
 .message-image {
@@ -155,4 +165,101 @@
 .message-time {
     font-size: 0.75vw;
     color: rgba(255, 255, 255, 0.562);
+}
+
+.messanger-inspection-ls {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    padding: 1vw;
+    flex-direction: column;
+
+}
+
+
+.massnnge-text {
+    color: #7C7D86;
+}
+
+
+.answer {
+    padding: 1vw;
+    color: #4A4C58;
+    font-size: 80%;
+}
+
+.mess-page {
+    width: 60%;
+    padding: 4vw;
+    height: 100%;
+
+
+    background-color: #383A47;
+}
+
+.messanger-inspection-ls {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.messanger-name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.messanger-image {
+    width: 3vw;
+    height: 3vw;
+    background-color: #C4C4C4;
+    border-radius: 1vw;
+}
+
+.messange-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    gap: 1vh;
+}
+
+.massnnge-time {
+    color: #5C5E68;
+    margin-bottom: 2vh;
+}
+
+.message-category {
+    font-weight: 200;
+    font-size: 1.5vw;
+}
+
+.massnnge-answer {
+    width: 100%;
+}
+
+.massnnge-text {
+    line-height: 3vh;
+}
+
+.answer {
+    width: 100%;
+    padding: 0;
+
+    color: white;
+
+    background-color: transparent;
+    border: none;
+
+    resize: none;
+
+    border-bottom: 1px solid #4C4E59;
+}
+
+.answer::-webkit-scrollbar {
+    width: 0;
 }

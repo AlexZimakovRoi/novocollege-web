@@ -1,0 +1,76 @@
+.mark-page {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 0.5vw;
+}
+
+.mark-page::-webkit-scrollbar {
+    width: 0;
+}
+
+.mark-container {
+    width: 100%;
+    display: flex;
+    padding: 0.5vw;
+    background-color: #FFFFFF04;
+    border-radius: 0.5vw;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.info-course-container {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1vh;
+}
+
+.info-course-container p {
+    font-size: 0.8vw;
+    width: 100%;
+    text-align: center;
+}
+
+.info-course-container p:last-child {
+    text-align: end;
+}
+
+.middle-mark-container {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.middle-mark-container p,
+.mark-card p {
+    font-size: 0.8vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+.middle-mark-container p:last-child,
+.mark-card p:last-child {
+    font-size: 1.2vw;
+}
+
+.marks-container {
+    width: 70%;
+    display: flex;
+    gap: 2vw;
+    overflow-x: auto;
+}
+
+
+.marks-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.mark-card {
+    width: 20vw;
+}

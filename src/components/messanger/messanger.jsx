@@ -1,12 +1,8 @@
 import React from "react";
-import './messanger.css'
+import { messageArr } from "../../store/store";
+import { NavLink, Outlet } from "react-router-dom";
 
 class Messanger extends React.Component {
-    messageArr = [{ id: 1, userName: 'Иванова Ивановна', nameLesson: 'Русский язык', messageCategory: 'Ответ на домашнее задание:', messageTime: '12:10', messageText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt erat risus, id gravida lacus mollis eu. Duis in est quis lorem vehicula accumsan. Etiam risus erat, iaculis non erat ut, commodo suscipit diam. Nam sagittis consectetur elit eu porttitor. Suspendisse molestie porttitor fringilla. Nunc vel augue eros. Vestibulum posuere rutrum velit rutrum cursus. Vivamus aliquet velit sed tellus fermentum ultricies. Praesent elementum augue ut venenatis vehicula. Nulla facilisi. Aliquam egestas eros eu tortor accumsan congue. Vestibulum sollicitudin sapien mauris.', userImage: '' },
-    { id: 2, userName: 'Иванова Ивановна', nameLesson: 'Русский язык', messageCategory: 'Ответ на домашнее задание:', messageTime: '12:10', messageText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt erat risus, id gravida lacus mollis eu. Duis in est quis lorem vehicula accumsan. Etiam risus erat, iaculis non erat ut, commodo suscipit diam. Nam sagittis consectetur elit eu porttitor. Suspendisse molestie porttitor fringilla. Nunc vel augue eros. Vestibulum posuere rutrum velit rutrum cursus. Vivamus aliquet velit sed tellus fermentum ultricies. Praesent elementum augue ut venenatis vehicula. Nulla facilisi. Aliquam egestas eros eu tortor accumsan congue. Vestibulum sollicitudin sapien mauris.', userImage: '' },
-    { id: 3, userName: 'Иванова Ивановна', nameLesson: 'Русский язык', messageCategory: 'Ответ на домашнее задание:', messageTime: '12:10', messageText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt erat risus, id gravida lacus mollis eu. Duis in est quis lorem vehicula accumsan. Etiam risus erat, iaculis non erat ut, commodo suscipit diam. Nam sagittis consectetur elit eu porttitor. Suspendisse molestie porttitor fringilla. Nunc vel augue eros. Vestibulum posuere rutrum velit rutrum cursus. Vivamus aliquet velit sed tellus fermentum ultricies. Praesent elementum augue ut venenatis vehicula. Nulla facilisi. Aliquam egestas eros eu tortor accumsan congue. Vestibulum sollicitudin sapien mauris.', userImage: '' },
-    { id: 4, userName: 'Иванова Ивановна', nameLesson: 'Русский язык', messageCategory: 'Ответ на домашнее задание:', messageTime: '12:10', messageText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt erat risus, id gravida lacus mollis eu. Duis in est quis lorem vehicula accumsan. Etiam risus erat, iaculis non erat ut, commodo suscipit diam. Nam sagittis consectetur elit eu porttitor. Suspendisse molestie porttitor fringilla. Nunc vel augue eros. Vestibulum posuere rutrum velit rutrum cursus. Vivamus aliquet velit sed tellus fermentum ultricies. Praesent elementum augue ut venenatis vehicula. Nulla facilisi. Aliquam egestas eros eu tortor accumsan congue. Vestibulum sollicitudin sapien mauris.', userImage: '' }]
-
     render() {
         return (
             <main className="messanger">
@@ -25,9 +21,9 @@ class Messanger extends React.Component {
                             <option value="value3">Прочитаные</option>
                         </select>
                     </div>
-                    <div className="message-list">
-                        {this.messageArr.map(data => (
-                            <button className="message-box">
+                    <section className="message-list">
+                        {messageArr.map(data => (
+                            <NavLink key={data.id} to={'0' + data.id} className="message-box">
                                 <div id={data.id} className="message-title">
                                     <img className="message-image" src="#" alt="NaN" />
                                     <div className="message-main">
@@ -37,28 +33,18 @@ class Messanger extends React.Component {
                                         </div>
                                         <div className="message-text-div">
                                             <p className="message-category-p">{data.messageCategory}</p>
+                                            {/* <p className="massage-text-p">{data.messageText}</p> */}
                                         </div>
                                     </div>
                                     <div className="message-time-box">
                                         <p className="message-time">{data.messageTime}</p>
                                     </div>
                                 </div>
-                            </button>
+                            </NavLink>
                         ))}
-                    </div>
+                    </section>
                 </div>
-                <div className="messanger-inspection-ls">
-                    <div className="messanger-name">
-                        <p className="message-name-1"></p>
-                        <h1 className="message-name-2"></h1>
-                    </div>
-                    <div className="massnnger-time"></div>
-                    <div className="massnnger-text-ls"></div>
-                    <div className="massnnger-answer">
-                        <h1 className="Ответить..."></h1>
-                    </div>
-                    <div className="massnnger-color-team"></div>
-                </div>
+                <Outlet />
             </main>
         )
     }

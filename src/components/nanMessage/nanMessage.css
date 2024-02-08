@@ -1,0 +1,18 @@
+.nan-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.nan-image {
+    width: 25vw;
+    height: 25vw;
+    user-select: none;
+}
+
+.nan-h1 {
+    padding: 2vw;
+    font-size: 2vw;
+    text-align: center;
+}
